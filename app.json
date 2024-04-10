@@ -1,0 +1,74 @@
+{
+    "name": "മഹാ🔱കാളി",
+    "description": "A Telegram Music Player Bot with Group Management features, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/a09d8aab7d4f4d4c9e00d.jpg",
+    "repository": "https://github.com/sakhaavvaavaj93/mahakali/tree/main.git",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+	"kali",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "1621962",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "6f019552c1cf83dec1851516b1bb099c",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "6795239145:AAGQze8Vm9kuFe9hMoD8TzkPv-sZJYsK5-U",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "mongodb+srv://nakipa4266:WJBUoH3dnQiT3J1k@vaava.dwuolyo.mongodb.net/?retryWrites=true&w=majority&appName=vaava",
+        "required": false
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "2107529793",
+        "required": false
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram v2 String Session from @Shsusu_bot on Telegram.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app name",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!.",
+        "value": "-1002043988630",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
