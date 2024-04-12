@@ -5,11 +5,9 @@ from pyrogram.types import *
 from mahakali.utils.admin_check import admin_filter
 
 strict_txt = [
-    "ᴅᴏsᴛ ᴋɪ ɢᴀᴀɴᴅ ɴʜɪ ᴍᴀᴀʀ sᴋᴛᴀ.",
-    "sᴀᴄʜ ᴍᴇ? ᴀᴘɴᴇ ᴅᴏsᴛ ᴋɪ ɢᴀᴀɴᴅ ᴍᴀᴀʀ ʟᴏᴏɴ.",
-    "ᴍᴀɪɴ ᴀᴘɴᴇ ʙᴇsᴛ ғʀɪᴇɴᴅ ᴋᴀ ʟᴜɴᴅ ɴʜɪ ᴋᴀᴀᴛ sᴋᴛᴀ.",
-    "ᴍᴀɪɴ ᴜsᴇ ᴊᴀᴀɴᴛᴀ ʜᴏᴏɴ. ᴍᴜᴊʜᴇ sᴀᴍᴀᴊʜɴᴇ ᴋᴀ ᴘʀʏᴀssʜ ᴋʀᴏ ɪsᴋɪ ᴍᴀᴀʀɪ ᴛᴏ ʀᴀɴᴅᴡᴀ ᴍᴀʀʀ ᴊᴀʏᴇɢᴀ."
-]
+    "Please use a message to reply",
+    "ഞാൻ ഇയാളെ കണ്ടിട്ടു കൂടെ ഇല്ല . പിന്നെയല്ലേ അഡ്മിന് ആക്കുന്നേ ",
+    "are you a blind?" ]
 
 promote = ["promote", "adminship"]
 fullpromote = ["fullpromote", "fadmin"]
