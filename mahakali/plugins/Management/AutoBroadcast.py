@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 START_IMG_URL = "https://te.legra.ph/file/c4e5321383340278c5672.jpg"
 
 
-MESSAGE = f""**My Owner/Dev Restarted Me,Due to Some Technical Errors**
+MESSAGE = f"""**My Owner/Dev Restarted Me,Due to Some Technical Errors**
 🚩 ʙᴏᴛ »|| @{app.username}||"""
 
 BUTTON = InlineKeyboardMarkup(
