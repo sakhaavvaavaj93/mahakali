@@ -4,7 +4,7 @@ import random
 import requests
 from mahakali import app 
 
-SUPPORT_CHAT = "LOVE_FEELINGS_WILL1"
+SUPPORT_CHAT = "Mallus_Street"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
