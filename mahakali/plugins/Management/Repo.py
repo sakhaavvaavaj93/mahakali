@@ -8,7 +8,7 @@ from mahakali.utils.errors import capture_err
 start_txt = """**
 ➤ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍʏ ᴡᴏʀʟᴅ ᥫᩣ
  
- ⦿ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ɴ ᴠᴘs ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ !
+ ⦿ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ  ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ !
  
  ⦿ ɴᴏ ʜᴇʀᴏᴋᴜ ʙᴀɴ ɪssᴜᴇ !
  
@@ -32,7 +32,7 @@ async def start(_, msg):
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph/file/39641eab294c2960153a2.jpg",
+        photo="https://te.legra.ph/file/0395fd6dcbe47c992a4b0.jpg",
         caption=start_txt,
         reply_markup=reply_markup,
     )
@@ -46,7 +46,7 @@ async def start(_, msg):
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://telegra.ph/file/7c1e049c12d183562c632.jpg")
+        response = await client.get("https://te.legra.ph/file/0395fd6dcbe47c992a4b0.jpg")
     
     if response.status_code == 200:
         users = response.json()
@@ -56,7 +56,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[ʀᴇᴘᴏ](https://telegra.ph/file/7c1e049c12d183562c632.jpg) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/Mallus_Street)
+        text = f"""[ʀᴇᴘᴏ](https://telegra.ph/file/7c1e049c12d183562c632.jpg) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/BOOTUPITSOLUTIONS)
 | ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs |
 ----------------
 {list_of_users}"""
