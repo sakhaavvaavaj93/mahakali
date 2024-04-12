@@ -27,6 +27,7 @@ async def brah3(app :app, message:Message):
                pass
            try:
              await message.reply(f"{text} 💞")
+             await message.delete()
            except:
              pass
 
