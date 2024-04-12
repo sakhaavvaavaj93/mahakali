@@ -1,4 +1,4 @@
-from stenzle import app 
+from mahakali import app 
 import asyncio
 import random
 from pyrogram import Client, filters
