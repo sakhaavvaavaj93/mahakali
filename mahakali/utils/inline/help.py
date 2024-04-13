@@ -50,14 +50,3 @@ def private_help_panel(_):
 	buttons = [[InlineKeyboardButton(text=_["S_B_4"], url=f"https://t.me/{app.username}?start=help")]]
 	return buttons
 
-# Ease of access
-def private_help_panel(_):
-	buttons = [[InlineKeyboardButton(text=_["S_B_10"], url=f"https://t.me/{app.username}?start=Management")]]
-	return buttons
-
-
-
-#----------------------------> NOTE <-----------------------------#
-"""
-Written By Dil.
-"""
