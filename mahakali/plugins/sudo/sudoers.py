@@ -46,20 +46,20 @@ async def userdel(client, message: Message, _):
 
 
 
-GAMDOP = "https://telegra.ph/file/96d4950c132ab4326559b.jpg"
+GAMDOP = "https://te.legra.ph/file/057159fa1e0eb78acf8ad.jpg"
 
 @app.on_message(filters.command(["sudolist", "listsudo", "sudoers"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]) & ~BANNED_USERS)
 async def sudoers_list(client, message: Message):
     keyboard = [[InlineKeyboardButton(" sᴜᴅᴏʟɪsᴛ ", callback_data="check_sudo_list")]]
     reply_markups = InlineKeyboardMarkup(keyboard)
-    await message.reply_photo(photo=GAMDOP, caption="➤ ᴄʜᴇᴄᴋ ᴛᴏ sᴇᴇɴ ᴛʜᴇ ᴍᴀɢɪᴄ ʙʟɪɴɢ ʙʟɪɴɢ ✨.\n\n <u><b>ɴᴏᴛᴇ:</b></u> ᴏɴʟʏ sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ ᴠɪᴇᴡ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ <a href=\"https://t.me/dil_sagar_121\">ᴅɪʟ❣️</a> ", reply_markup=reply_markups)
+    await message.reply_photo(photo=GAMDOP, caption="➤ ᴄʜᴇᴄᴋ ᴛᴏ sᴇᴇɴ ᴛʜᴇ ᴍᴀɢɪᴄ ʙʟɪɴɢ ʙʟɪɴɢ ✨.\n\n <u><b>ɴᴏᴛᴇ:</b></u> ᴏɴʟʏ sᴜᴅᴏ ᴜsᴇʀs ᴄᴀɴ ᴠɪᴇᴡ. ", reply_markup=reply_markups)
 
 
 @app.on_callback_query(filters.regex("^check_sudo_list$"))
 async def check_sudo_list(client, callback_query: CallbackQuery):
     keyboard = []
     if callback_query.from_user.id not in SUDOERS:
-        return await callback_query.answer("➤ ʙʜᴏsᴀᴅɪᴋᴇ sᴜᴅᴏ ᴅᴇᴋʜɴᴇɢᴇ ɢᴀᴀɴᴅ ᴍᴇ ᴍᴏᴛᴀ ʟᴜɴᴅ ᴅᴀᴀʟ ᴅᴏᴏɴɢᴀ😂", show_alert=True)
+        return await callback_query.answer("➤ You are Not a sudo.😂", show_alert=True)
     else:
         user = await app.get_users(OWNER_ID)
 
