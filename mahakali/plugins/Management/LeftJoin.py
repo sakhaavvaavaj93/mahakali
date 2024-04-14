@@ -48,6 +48,7 @@ async def member_has_joined(client: bot, member: ChatMemberUpdated):
             caption=caption,
             reply_markup=user_button,
         )
+        await message.delete()
     except RPCError as e:
         print(e)
         return
@@ -89,6 +90,7 @@ async def member_has_left(client: bot, member: ChatMemberUpdated):
             caption=caption,
             reply_markup=user_button,
         )
+        await message.delete()
         return
     except RPCError as e:
         print(e)
