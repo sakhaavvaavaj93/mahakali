@@ -53,6 +53,11 @@
         "value": "",
         "required": false
       },
+     "GIT_TOKEN": {
+        "description": "Github token, if your repo is Private",
+        "value": "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",
+        "required": false
+      },
       "LOGGER_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!.",
         "value": "-1002043988630",
