@@ -185,14 +185,14 @@ async def play_commnd(
             else:
                 try:
                     details, track_id = await YouTube.track(url)
-           #     except:
-           #         return await mystic.edit_text(_["play_3"])
-            #    streamtype = "youtube"
-             #   img = details["thumb"]
-           #     cap = _["play_10"].format(
-           #         details["title"],
-           #         details["duration_min"],
-            #    )
+                except:
+                    return await mystic.edit_text(_["play_3"])
+                streamtype = "youtube"
+                img = details["thumb"]
+                cap = _["play_10"].format(
+                    details["title"],
+                    details["duration_min"],
+                )
         elif await Spotify.valid(url):
             spotify = True
             if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
