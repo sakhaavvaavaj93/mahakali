@@ -269,7 +269,7 @@ async def play_commnd(
             try:
                 details, track_path = await SoundCloud.download(url)
             except:
-            #    return await mystic.edit_text(_["play_3"])
+                return await mystic.edit_text(_["play_3"])
             duration_sec = details["duration_sec"]
             if duration_sec > config.DURATION_LIMIT:
                return await mystic.edit_text(
@@ -358,10 +358,10 @@ async def play_commnd(
                     "c" if channel else "g",
                     "f" if fplay else "d",
                 )
-         #       return await mystic.edit_text(
-          #          _["play_13"],
-           #         reply_markup=InlineKeyboardMarkup(buttons),
-            #    )
+                return await mystic.edit_text(
+                    _["play_13"],
+                    reply_markup=InlineKeyboardMarkup(buttons),
+                )
         try:
             await stream(
                 _,
@@ -433,11 +433,11 @@ async def play_commnd(
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-              #  await message.reply_photo(
-              #      photo=img,
-              #      caption=cap,
-              #      reply_markup=InlineKeyboardMarkup(buttons),
-              #  )
+                await message.reply_photo(
+                    photo=img,
+                    caption=cap,
+                    reply_markup=InlineKeyboardMarkup(buttons),
+                )
                 return await play_logs(message, streamtype=f"URL Searched Inline")
 
 
@@ -667,6 +667,6 @@ async def slider_queries(client, CallbackQuery, _):
                 duration_min,
             ),
         )
-    #    return await CallbackQuery.edit_message_media(
-     #       media=med, reply_markup=InlineKeyboardMarkup(buttons)
-      #  )
+        return await CallbackQuery.edit_message_media(
+            media=med, reply_markup=InlineKeyboardMarkup(buttons)
+        )
