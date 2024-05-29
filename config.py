@@ -25,7 +25,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", "-1001892096736"))
 
 OWNER_ID = int(getenv("OWNER_ID", "6438360532"))
 
-BOT_USERNAME = getenv("BOT_USERNAME" , "Sten_Zil_Bot)
+BOT_USERNAME = getenv("BOT_USERNAME" , "")
 
 COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split()
 
